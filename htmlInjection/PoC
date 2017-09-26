@@ -1,0 +1,7 @@
+When you go to the footer you can see three social media links.
+These links send you to a redirect page, for exemple:
+"index.php?page=redirect&amp;site=instagram"
+As you can see this is an URL so if you type it into the URL section you will be redirect to instagram, and if you change instagram by any other website the swebsite will redirect you without checking the redirection link. This is an XSS breach.
+
+How to fix it:
+Before redirecting the server need to check the redirecting url, and also he can use a sanitization and escaping function.
